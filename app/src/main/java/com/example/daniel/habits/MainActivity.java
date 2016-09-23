@@ -122,7 +122,7 @@ public class MainActivity extends AppCompatActivity {
                 EditText worth = (EditText) alertLayout.findViewById(R.id.markWorth);
                 EditText mark = (EditText) alertLayout.findViewById(R.id.yourMark);
 
-                String finalItem = item.getText().toString() + ":  " + worth.getText().toString() + "% out of " + mark.getText().toString() + "%";
+                String finalItem = item.getText().toString() + ":  " + mark.getText().toString() + "% out of " + worth.getText().toString() + "%";
 
 
                 itemArray.add(item.getText().toString());
