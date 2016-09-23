@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/material_deep_teal_200"
+        android:layout_weight="0.5">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Current Grade:"
+            android:id="@+id/textView5"
+            android:textColor="@android:color/white"
+            android:typeface="serif"
+            android:textStyle="bold"
+            android:textSize="42sp"
+            android:layout_gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="%"
+            android:id="@+id/txtCurrent"
+            android:textColor="@android:color/holo_red_dark"
+            android:typeface="serif"
+            android:textStyle="bold"
+            android:textSize="40sp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="56dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="223dp"
+        android:layout_gravity="center_vertical"
+        android:background="@color/material_deep_teal_200">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start Over!"
+            android:id="@+id/btnRedo"
+            android:background="@color/material_deep_teal_500"
+            android:textColor="@android:color/white"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:layout_gravity="fill_horizontal|center_horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="%"
+            android:id="@+id/txtNeeded"
+            android:textColor="@android:color/holo_red_dark"
+            android:typeface="serif"
+            android:textStyle="bold"
+            android:textSize="29sp"
+            android:layout_gravity="center"
+            android:layout_below="@+id/textView4"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To get 50%, you need:"
+            android:id="@+id/textView4"
+            android:textColor="@android:color/white"
+            android:typeface="serif"
+            android:textStyle="bold"
+            android:textSize="26sp"
+            android:layout_gravity="center"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:layout_columnSpan="3"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="on the exam!"
+            android:id="@+id/textView6"
+            android:textColor="@android:color/white"
+            android:typeface="serif"
+            android:textStyle="bold"
+            android:textSize="26sp"
+            android:layout_gravity="center"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:layout_columnSpan="3"
+            android:layout_below="@+id/txtNeeded"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+</LinearLayout>
